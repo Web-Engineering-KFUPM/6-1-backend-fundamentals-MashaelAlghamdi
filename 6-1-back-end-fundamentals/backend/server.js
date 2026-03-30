@@ -1,3 +1,5 @@
+import cors from 'cors';
+
 // TODO 1: Import Express
 import express from 'express';
 
@@ -7,7 +9,7 @@ const app = express();
 
 
 // TODO 3: Allow React to access the server
-
+app.use(cors());
 
 
 // TODO 5: Create the home route "/"
